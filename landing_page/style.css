@@ -167,6 +167,7 @@ body {
 .page2 {
   margin: 31.7rem 0 0 0
 }
+
 .page2_title {
   margin: 0 0 1.126rem 2rem;
   font-family: 'Open Sans', sans-serif;
@@ -312,22 +313,23 @@ body {
   }
 }
 
-.page34_arrow_container {
+.page1_arrow_container {
   position: fixed;
   animation: moveUpDown 2s linear infinite;
+  z-index: 4;
 }
 
-.page34_arrow_container > img { /*움직이는 화살표 이미지*/
+.page1_arrow_container > img { /*움직이는 화살표 이미지*/
   position: fixed;
-  z-index: 1;
-  top: 84rem;
-  left:30rem;
+  top: 46.3rem;
+  left:27rem;
   transform: translate(-50%, -50%); /* 요소의 중심을 화면 가운데로 이동 */
-
   width:8rem;
   height: 5rem;
   opacity: 0; /* 초기에 투명하게 설정 */
   animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
+  transition: transform 0.5s ease, display 0.5s ease;
+  transform: translateY(5rem); /* 초기 위치를 아래로 설정 */
 }
 
 footer {
@@ -341,12 +343,12 @@ footer {
   align-items: center; /* 세로 중앙 정렬 */
   background-size: cover;
   background-repeat: no-repeat; 
-  z-index: 2;
+  z-index: 10;
 }
 
 .button-container {
   position:fixed;
-  bottom:5rem;
+  bottom:6.5rem;
   width: 50rem;
   height: 6.5rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
@@ -358,11 +360,11 @@ footer {
   border-style: solid;
   border-width: 2px;
   color:white;
-  font-family: Google-Reg;
+  font-family: Google-Bold;
   font-size: 2rem;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 13px 20px;
-  background-color: transparent; /* 배경색 없음 */
+  background-color: #0f1116; /* 배경색 없음 */
   cursor: pointer;
   outline: none;
 }
@@ -377,7 +379,7 @@ footer {
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
   width: 100%;
-  height: 15rem; /* 원하는 블러 처리된 요소의 높이 설정 */
+  height: 17rem; /* 원하는 블러 처리된 요소의 높이 설정 */
   background-color: #0f1116; /* 블러 처리된 배경 색상 설정 */
   backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
   box-shadow: 0 0 15px 20px #0f1116, 0 0 30px 30px #0f1116;
@@ -394,44 +396,44 @@ footer {
   margin-bottom: 50%; /*가장 아래 높이 지정*/
 }
 
-.page3 .page34_title, .page4 .page34_title{
+.page3_title, .page4_title{
   text-align: left;
   margin-left: 2rem;
   font-family: 'Open Sans', sans-serif; /*타이틀 폰트*/
-  font-size:4rem;
+  font-size:2.8rem;
   font-weight: bolder;
 }
 
-.page3 .page34_title{
+.page3_title{
   margin-top: 16rem; /*합친후 조정 필요*/
   margin-bottom: 22rem;
   text-align: left;
 }
-.page4 .page34_title{
+.page4_title{
   margin-top: 29rem;
   margin-bottom: 6rem;
 }
 
-.page3 .page34_content {
+.page3_content {
   color:#e4e8ebcc;
   text-align: left;
   margin-left: 3.5rem;
   font-family: Google-Light; /*페이지3 내용 폰트*/
-  font-size: 0.75rem;
+  font-size: 10px;
   line-height: 2;
 }
-.page4 .page34_content{
+.page4_content{
   text-align: center;
 }
 
-.page34_con_title1, .page34_con_title2, .page34_con_title3{
+.page4_con_title1, .page4_con_title2, .page4_con_title3{
   margin-top: 7%; /*세가지 요소 간의 간격*/
   font-family: 'Open Sans', sans-serif; /*페이지4 내용 제목 폰트*/
   font-size: 1rem;
   font-weight: bold;
   line-height: 1.5;
 }
-.page34_con_text1, .page34_con_text2, .page34_con_text3{
+.page4_con_text1, .page4_con_text2, .page4_con_text3{
   font-family: "Open Sans", sans-serif;
   margin-top: -20px; /*글자간격*/
   font-weight: lighter;
@@ -439,24 +441,24 @@ footer {
   color:#e4e8ebcc;
 }
 
-.page34_con_title1, .page34_con_text1{
+.page4_con_title1, .page4_con_text1{
   margin-left: -40%;
 }
-.page34_con_title2, .page34_con_text2{
+.page4_con_title2, .page4_con_text2{
   text-align: center;
 }
-.page34_con_title3, .page34_con_text3{
+.page4_con_title3, .page4_con_text3{
   margin-left: 50%;
 }
 
-.page34_plus{
+.page4_plus{
   text-align: center;
   margin-top: 8%;
   margin-bottom: 8%;
   font-size: 6rem;
   font-weight: lighter;
 }
-.page34_plus_content{
+.page4_plus_content{
   color:#e4e8ebcc;
   margin:0 auto;
   text-align: center;
