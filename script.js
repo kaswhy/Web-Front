@@ -2,7 +2,7 @@ const swiper = new Swiper(".swiper", {
   // centerSlide
   slidesPerView: "1.1",
   centeredSlides: false,
-  spaceBetween: 40,
+  spaceBetween: 30,
 
   //loop
   loop: false,
