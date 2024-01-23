@@ -21,9 +21,11 @@ window.addEventListener("scroll", function() {
   const bottomOfPage = document.body.scrollHeight - window.innerHeight;
 
   if (scrollPosition >= bottomOfPage - 5) {
-    image.style.transform = "translateY(5rem)";
+    image.style.transition = "visibility 0.1s"
+    image.style.visibility = "hidden";
   } else {
-    image.style.transform = "translateY(0)";
+    image.style.transition = "visibility 0.1s"
+    image.style.visibility="visible";
   }
 });
 
