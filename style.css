@@ -137,7 +137,7 @@ body {
   color: var(--text-color);
 }
 
-.page1_section_headline > h3 {
+#gdsc {
   font-family: "OpenSans_SemiBold";
   font-weight: 600;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
@@ -147,7 +147,7 @@ body {
   margin: 0 0 1.43vh 0;
 }
 
-.page1_section_headline > p {
+#inha {
   font-family: "OpenSans_Light";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
