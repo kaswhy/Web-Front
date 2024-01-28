@@ -87,7 +87,7 @@ body {
 .page1_header_logo_head {
   font-family: "OpenSans_Bold";
   font-weight: 700;
-  font-size: 19.2px;
+  font-size: 1.2rem;
   width: 8.3vw;
   height: 1.43vh;
   margin: 0 1rem 0 0;
@@ -98,7 +98,7 @@ body {
   font-weight: 400;
   width: 9.4vw;
   height: 1.43vh;
-  font-size: 19.2px;
+  font-size: 1.2rem;
 }
 
 .page1_header_join {
@@ -106,7 +106,7 @@ body {
   font-family: "OpenSans_Bold";
   font-weight: 700;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
-  font-size: 19.2px;
+  font-size: 1.2rem;
   background-color: #4285f4;
   color: var(--text-color);
   border: none;
@@ -141,7 +141,7 @@ body {
   font-family: "OpenSans_SemiBold";
   font-weight: 600;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
-  font-size: 60.8px;
+  font-size: 3.8rem;
   width: 81.39vw;
   height: 9.45vh;
   margin: 0 0 1.43vh 0;
@@ -151,7 +151,7 @@ body {
   font-family: "OpenSans_Light";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
-  font-size: 24px;
+  font-size: 1.5rem;
   height: 2.05vh;
   margin: 0 0 0 0;
 }
@@ -165,7 +165,7 @@ body {
   font-family: "OpenSans_Regular";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
-  font-size: 35.2px;
+  font-size: 2.2rem;
   margin: 0 0 1.9rem 0;
   letter-spacing: -0.04375rem;
 }
@@ -214,7 +214,7 @@ body {
 .page2_swiper_image {
   position: relative;
   margin: 0 0 20.63rem 2rem;
-  width: 78.15vw;
+  width: 87.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -224,7 +224,7 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 78.15vw;
+  width: 87.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -236,7 +236,7 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 78.15vw;
+  width: 87.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -292,7 +292,7 @@ body {
   margin: 0 0 0 2rem;
   padding-left: 0;
   font-family: "RotoMono-Regular";
-  font-size: 0.5rem;
+  font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.055rem;
   letter-spacing: -0.02em;
@@ -324,12 +324,12 @@ body {
 .page1_arrow_container {
   position: fixed;
   animation: moveUpDown 2s linear infinite;
-  z-index: 4;
+  z-index: 5;
 }
 
 .page1_arrow_container > img { /*움직이는 화살표 이미지*/
   position: fixed;
-  top: 16rem;
+  top: 15rem;
   left:27rem;
   transform: translate(-50%, -50%); /* 요소의 중심을 화면 가운데로 이동 */
   width:8rem;
@@ -337,7 +337,7 @@ body {
   opacity: 0; /* 초기에 투명하게 설정 */
   animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
   transition: transform 0.5s ease, display 0.5s ease;
-  transform: translateY(5rem); /* 초기 위치를 아래로 설정 */
+  transform: translateY(5rem);
 }
 
 footer {
@@ -351,30 +351,32 @@ footer {
   align-items: center; /* 세로 중앙 정렬 */
   background-size: cover;
   background-repeat: no-repeat; 
-  z-index: 10;
+  z-index: 4;
 }
 
 .button-container {
+  z-index: 6;
   position:fixed;
-  bottom:6.5rem;
+  bottom:5rem;
   width: 50rem;
   height: 6.5rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
-  margin: 0 16px; /* 요소 간의 간격 설정 (예: 좌우 10px 여백) */
+  margin: 0 16px; 
 
   border-color: white;
   border-style: solid;
   border-width: 2px;
   color:white;
   font-family: "OpenSans_Bold";
-  font-size: 2rem;
+  font-size: 24px;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 13px 20px;
-  background-color: #0f1116; /* 배경색 없음 */
+  background-color: #0f1116;
   cursor: pointer;
   outline: none;
+  
 }
 
 .shadow {
@@ -391,14 +393,12 @@ footer {
   background-color: #0f1116; /* 블러 처리된 배경 색상 설정 */
   backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
   box-shadow: 0 0 15px 20px #0f1116, 0 0 30px 30px #0f1116;
-  z-index: 0;
 }
 
 
 
 .page3, .page4{
   color:white;
-  z-index: 2;
 }
 .page4{
   margin-bottom: 50%; /*가장 아래 높이 지정*/
@@ -409,7 +409,7 @@ footer {
   margin-left: 2rem;
   font-family: "OpenSans_SemiBold"; /*타이틀 폰트*/
   font-weight: 600;
-  font-size:2.8rem;
+  font-size:26px;
 }
 
 .page3_title{
@@ -425,7 +425,7 @@ footer {
 .page3_content {
   color:#e4e8ebcc;
   text-align: left;
-  margin-left: 3.5rem;
+  margin-left: 2rem;
   font-family: "OpenSans_Light"; /*페이지3 내용 폰트*/
   font-weight: 300;
   font-size: 10px;
@@ -439,14 +439,14 @@ footer {
   margin-top: 7%; /*세가지 요소 간의 간격*/
   font-family: "OpenSans_SemiBold"; /*페이지4 내용 제목 폰트*/
   font-weight: 600;
-  font-size: 1rem;
+  font-size: 13.5px;
   line-height: 1.5;
 }
 .page4_con_text1, .page4_con_text2, .page4_con_text3{
   font-family: "OpenSans_Light";
   font-weight: 300;
   margin-top: -20px; /*글자간격*/
-  font-size: 0.9rem;
+  font-size: 12px;
   color:#e4e8ebcc;
 }
 
@@ -474,7 +474,7 @@ footer {
   font-family: "OpenSans_Regular";
   font-weight: 400;
   line-height: 3.5rem;
-  font-size: 1.9rem;
+  font-size: 22px;
   border-color:#e4e8ebcc;;
   width: 33rem;
   border-style: solid;
@@ -483,4 +483,5 @@ footer {
   padding: 20px;
   background-color: rgba(17, 21, 27, 0.8); 
 }
+
 /*page3,4 end*/
