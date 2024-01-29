@@ -1,34 +1,41 @@
 /*font start*/
 @font-face {
-  font-family: "OpenSans_Bold";
-  src: url(/fonts/OpenSans-Bold.ttf) format("truetype");
-  font-weight: normal;
+  font-family: "OpenSans";
+  src: url(fonts/OpenSans-Bold.ttf) format("truetype");
+  font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans_SemiBold";
+  font-family: "OpenSans";
   src: url(fonts/OpenSans-SemiBold.ttf) format("truetype");
-  font-weight: normal;
+  font-weight: 600;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "OpenSans_Light";
+  font-family: "OpenSans";
   src: url(fonts/OpenSans-Light.ttf) format("truetype");
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;}
 
 @font-face {
-  font-family: "OpenSans_Regular";
+  font-family: "OpenSans";
   src: url(fonts/OpenSans-Regular.ttf) format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "RotoMono-Regular";
+  font-family: "RotoMono";
   src: url(fonts/Roboto-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GoogleSans";
+  src: url(landing_page/fonts/Google-Sans-Regular.woff) format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -51,7 +58,7 @@ body {
   margin: 0;
   padding: 0;
   overflow: auto; /* 스크롤 막기 */
-  background-image: url(/img/background_image.png);
+  background-image: url(img/background_image.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -85,7 +92,7 @@ body {
 }
 
 .page1_header_logo_head {
-  font-family: "OpenSans_Bold";
+  font-family: "OpenSans";
   font-weight: 700;
   font-size: 1.2rem;
   width: 8.3vw;
@@ -94,7 +101,7 @@ body {
 }
 
 .page1_header_logo_tail {
-  font-family: "GoogleSans_Regular";
+  font-family: "GoogleSans";
   font-weight: 400;
   width: 9.4vw;
   height: 1.43vh;
@@ -103,7 +110,7 @@ body {
 
 .page1_header_join {
   margin: 2.2rem 2.6rem 0 0;
-  font-family: "OpenSans_Bold";
+  font-family: "OpenSans";
   font-weight: 700;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
   font-size: 1.2rem;
@@ -138,7 +145,7 @@ body {
 }
 
 #gdsc {
-  font-family: "OpenSans_SemiBold";
+  font-family: "OpenSans";
   font-weight: 600;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
   font-size: 3.8rem;
@@ -148,7 +155,7 @@ body {
 }
 
 #inha {
-  font-family: "OpenSans_Light";
+  font-family: "OpenSans";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
   font-size: 1.5rem;
@@ -162,8 +169,8 @@ body {
 }
 
 .page1_section_body > p {
-  font-family: "OpenSans_Regular";
-  font-weight: 300;
+  font-family: "OpenSans";
+  font-weight: 400;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
   font-size: 2.2rem;
   margin: 0 0 1.9rem 0;
@@ -178,7 +185,7 @@ body {
 
 .page2_title {
   margin: 0 0 1.126rem 2rem;
-  font-family: "OpenSans_SemiBold";
+  font-family: "OpenSans";
   font-weight: 600;
   font-size: 2.8rem;
   line-height: 3.541rem;
@@ -187,7 +194,7 @@ body {
 
 .page2_sub {
   margin: 0 0 8.596rem 2rem;
-  font-family: "RotoMono-Regular";
+  font-family: "RotoMono";
   font-size: 0.7rem;
   font-weight: 400;
   line-height: 1.451rem;
@@ -253,7 +260,7 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "OpenSans_Bold";
+  font-family: "OpenSans";
   font-size: 2.4rem;
   font-weight: 700;
   line-height: 30.53px;
@@ -268,7 +275,7 @@ body {
   top: 69.4%;
   width: 92.639%;
   height: 38.05%;
-  font-family: "OpenSans_Light";
+  font-family: "OpenSans";
   font-size: 1.4rem;
   line-height: 1.907rem;
   font-weight: 300;
@@ -291,7 +298,7 @@ body {
   list-style: none;
   margin: 0 0 0 2rem;
   padding-left: 0;
-  font-family: "RotoMono-Regular";
+  font-family: "RotoMono";
   font-size: 0.8rem;
   font-weight: 400;
   line-height: 1.055rem;
@@ -369,7 +376,7 @@ footer {
   border-style: solid;
   border-width: 2px;
   color:white;
-  font-family: "OpenSans_Bold";
+  font-family: "OpenSans";
   font-size: 24px;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 13px 20px;
@@ -407,7 +414,7 @@ footer {
 .page3_title, .page4_title{
   text-align: left;
   margin-left: 2rem;
-  font-family: "OpenSans_SemiBold"; /*타이틀 폰트*/
+  font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
   font-size:26px;
 }
@@ -426,7 +433,7 @@ footer {
   color:#e4e8ebcc;
   text-align: left;
   margin-left: 2rem;
-  font-family: "OpenSans_Light"; /*페이지3 내용 폰트*/
+  font-family: "OpenSans"; /*페이지3 내용 폰트*/
   font-weight: 300;
   font-size: 10px;
   line-height: 2;
@@ -437,13 +444,13 @@ footer {
 
 .page4_con_title1, .page4_con_title2, .page4_con_title3{
   margin-top: 7%; /*세가지 요소 간의 간격*/
-  font-family: "OpenSans_SemiBold"; /*페이지4 내용 제목 폰트*/
+  font-family: "OpenSans"; /*페이지4 내용 제목 폰트*/
   font-weight: 600;
   font-size: 13.5px;
   line-height: 1.5;
 }
 .page4_con_text1, .page4_con_text2, .page4_con_text3{
-  font-family: "OpenSans_Light";
+  font-family: "OpenSans";
   font-weight: 300;
   margin-top: -20px; /*글자간격*/
   font-size: 12px;
@@ -471,7 +478,7 @@ footer {
   color:#e4e8ebcc;
   margin:0 auto;
   text-align: center;
-  font-family: "OpenSans_Regular";
+  font-family: "OpenSans";
   font-weight: 400;
   line-height: 3.5rem;
   font-size: 22px;
