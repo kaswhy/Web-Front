@@ -52,7 +52,7 @@
 :root {
   --text-color: #ffffff;
   --body-text-color: #cecece;
-  --background-color: #0f1116;
+  --background-color: #090A0D;
 }
 
 body {
@@ -187,24 +187,24 @@ body {
 
 /*page2 start*/
 .page2 {
-  margin: 31.7rem 0 0 0
+  margin: 75rem 0 0 0
 }
 
 .page2_title {
-  margin: 0 0 1.126rem 2rem;
+  margin: 0 0 2.126rem 2rem;
   font-family: "OpenSans";
-  font-weight: 600;
-  font-size: 2.8rem;
+  font-weight: 700;
+  font-size: 3.8rem;
   line-height: 3.541rem;
   color: rgba(255, 255, 255, 1);
 }
 
 .page2_sub {
-  margin: 0 0 8.596rem 2rem;
+  margin: 0 0 12.596rem 2rem;
   font-family: "RotoMono";
   font-size: 0.7rem;
   font-weight: 400;
-  line-height: 1.451rem;
+  line-height: 1.251rem;
   letter-spacing: -0.02em;
   text-align: left;
   opacity: 80%;
@@ -227,8 +227,8 @@ body {
 
 .page2_swiper_image {
   position: relative;
-  margin: 0 0 20.63rem 2rem;
-  width: 87.729133vw;
+  margin: 0 0 20.63rem 0;
+  width: 77.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -238,7 +238,7 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 87.729133vw;
+  width: 77.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -250,7 +250,7 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 87.729133vw;
+  width: 77.729133vw;
   height: 21.84365vh;
   top: 0;
   left: 0;
@@ -268,7 +268,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "OpenSans";
-  font-size: 2.4rem;
+  font-size: 60px;
   font-weight: 700;
   line-height: 30.53px;
   letter-spacing: 0em;
@@ -279,18 +279,29 @@ body {
 .page2_list {
   position: absolute;
   margin: 0 0 0 0;
-  top: 69.4%;
+  top: 63.4%;
   width: 92.639%;
-  height: 38.05%;
+  height: 39.05%;
   font-family: "OpenSans";
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   line-height: 1.907rem;
   font-weight: 300;
-  letter-spacing: 0em;
+  letter-spacing: 0rem;
   text-align: left;
   padding-left: 2rem;
   opacity: 0;
   color: rgba(255, 255, 255, 1);
+}
+
+#figma_logo, #notion_logo, #github_logo{
+  margin-left: 10px;
+}
+
+#team_study_head{
+  font-size: 1.6rem;
+}
+#team_study_tail{
+  font-size: 1.2rem;
 }
 
 .swiper-slide-active ul {
@@ -298,12 +309,12 @@ body {
 }
 
 .page2_list li {
-  margin: 0 0 1.4rem 2rem;
+  margin: 0 0 1.4rem 0;
 }
 
 .page2_caution {
   list-style: none;
-  margin: 0 0 0 2rem;
+  margin: -3rem 0 0 3.6rem;
   padding-left: 0;
   font-family: "RotoMono";
   font-size: 0.8rem;
@@ -312,7 +323,7 @@ body {
   letter-spacing: -0.02em;
   text-align: left;
   color: #e4e8eb80;
-  opacity: 80%;
+  opacity: 50%;
 }
 /*page2 end*/
 
