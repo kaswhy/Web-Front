@@ -348,16 +348,23 @@ body {
 }
 
 .page1_arrow_container {
-  position: fixed;
+  z-index: 60;
+  position: fixed; 
+  bottom: 320px;
+  left: 0;
+  right: 0; /* 하단에 위치 */
+  margin: 0 auto;
+  justify-content: center; 
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  text-align: center;
   animation: moveUpDown 2s linear infinite;
-  z-index: 5;
 }
 
-.page1_arrow_container > img { /*움직이는 화살표 이미지*/
-  position: fixed;
-  top: 15rem;
-  left:27rem;
-  transform: translate(-50%, -50%); /* 요소의 중심을 화면 가운데로 이동 */
+#arrow{
+  z-index: 60;
   width:8rem;
   height: 5rem;
   opacity: 0; /* 초기에 투명하게 설정 */
@@ -366,30 +373,23 @@ body {
   transform: translateY(5rem);
 }
 
-footer {
+.button-container {
+  z-index: 55;
   position: fixed; 
-  bottom: 0;
   left: 0;
-  right: 0;
-  margin: 0 auto; /* 수평 가운데 정렬 */
-  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
-  justify-content: center; /* 가로 중앙 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
+  right: 0; /* 하단에 위치 */
+  margin: 0 auto;
+  justify-content: center; 
+  align-items: center;
   background-size: cover;
   background-repeat: no-repeat; 
-  z-index: 4;
-}
 
-.button-container {
-  z-index: 6;
-  position:fixed;
-  bottom:5rem;
+  bottom:6rem;
   width: 50rem;
   height: 6.5rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
-  margin: 0 16px; 
 
   border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
@@ -406,21 +406,28 @@ footer {
 }
 
 .shadow {
-  position: fixed; /* 고정 위치로 설정 */
+  z-index: 50;
+  position: fixed; 
+  bottom: 0;
+  left: 0;
+  right: 0; /* 하단에 위치 */
+  margin: 0 auto;
+  justify-content: center; 
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat; 
+
+  width: 100%;
   bottom: 0; /* 페이지 하단에 고정 */
   left: 0;
   right: 0;
   margin: 0 auto; /* 수평 가운데 정렬 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
-  justify-content: center; /* 가로 중앙 정렬 */
-  align-items: center; /* 세로 중앙 정렬 */
-  width: 100%;
   height: 17rem; /* 원하는 블러 처리된 요소의 높이 설정 */
   background-color: #0f1116; /* 블러 처리된 배경 색상 설정 */
   backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
-  box-shadow: 0 0 15px 20px #0f1116, 0 0 30px 30px #0f1116;
+  box-shadow: 0 0 25px 30px #0f1116, 0 0 60px 45px #0f1116;
 }
-
 
 
 .page3, .page4{
