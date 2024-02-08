@@ -17,7 +17,8 @@
   font-family: "OpenSans";
   src: url(fonts/OpenSans-Light.ttf) format("truetype");
   font-weight: 300;
-  font-style: normal;}
+  font-style: normal;
+}
 
 @font-face {
   font-family: "OpenSans";
@@ -52,7 +53,7 @@
 :root {
   --text-color: #ffffff;
   --body-text-color: #cecece;
-  --background-color: #090A0D;
+  --background-color: #090a0d;
 }
 
 body {
@@ -89,7 +90,7 @@ body {
 }
 
 .page1_header_logo {
-  margin : 2.2rem 0 0 2.5rem;
+  margin: 2.2rem 0 0 2.5rem;
   display: flex;
   align-items: center;
 }
@@ -119,7 +120,7 @@ body {
   margin: 2.2rem 2.6rem 0 0;
   font-family: "OpenSans";
   font-weight: 700;
-  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
+  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 1.2rem;
   background-color: #4285f4;
   color: var(--text-color);
@@ -142,7 +143,7 @@ body {
 }
 
 .page1_section_logo {
-  margin : 0 0 1.88vh 0;
+  margin: 0 0 1.88vh 0;
   width: 18.49vw;
   height: 4.9vh;
 }
@@ -154,7 +155,7 @@ body {
 #gdsc {
   font-family: "OpenSans";
   font-weight: 600;
-  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
+  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 3.8rem;
   width: 81.39vw;
   height: 9.45vh;
@@ -164,7 +165,7 @@ body {
 #inha {
   font-family: "OpenSans";
   font-weight: lighter;
-  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
+  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 40px;
   height: 2.05vh;
   margin: 0 0 0 0;
@@ -178,7 +179,7 @@ body {
 .page1_section_body > p {
   font-family: "OpenSans";
   font-weight: 300;
-  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.50);
+  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 2.3rem;
   margin: 0 0 1.9rem 0;
   letter-spacing: -0.04375rem;
@@ -187,7 +188,7 @@ body {
 
 /*page2 start*/
 .page2 {
-  margin: 75rem 0 0 0
+  margin: 75rem 0 0 0;
 }
 
 .page2_title {
@@ -293,14 +294,16 @@ body {
   color: rgba(255, 255, 255, 1);
 }
 
-#figma_logo, #notion_logo, #github_logo{
+#figma_logo,
+#notion_logo,
+#github_logo {
   margin-left: 10px;
 }
 
-#team_study_head{
+#team_study_head {
   font-size: 1.6rem;
 }
-#team_study_tail{
+#team_study_tail {
   font-size: 1.2rem;
 }
 
@@ -331,41 +334,43 @@ body {
 
 /*화살표 애니메이션*/
 @keyframes moveUpDown {
-  0%, 100% {
-      transform: translateY(0);
+  0%,
+  100% {
+    transform: translateY(0);
   }
   50% {
-      transform: translateY(-10px); /* 움직임 크기 및 방향 조절 */
+    transform: translateY(-10px); /* 움직임 크기 및 방향 조절 */
   }
 }
 @keyframes fadeInOut {
-  0%, 100% {
-      opacity: 0;
+  0%,
+  100% {
+    opacity: 0;
   }
   50% {
-      opacity: 1; /* 나타났다 사라지는 애니메이션 설정 */
+    opacity: 1; /* 나타났다 사라지는 애니메이션 설정 */
   }
 }
 
 .page1_arrow_container {
   z-index: 60;
-  position: fixed; 
+  position: fixed;
   bottom: 320px;
   left: 0;
   right: 0; /* 하단에 위치 */
   margin: 0 auto;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 
   text-align: center;
   animation: moveUpDown 2s linear infinite;
 }
 
-#arrow{
+#arrow {
   z-index: 60;
-  width:8rem;
+  width: 8rem;
   height: 5rem;
   opacity: 0; /* 초기에 투명하게 설정 */
   animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
@@ -375,16 +380,16 @@ body {
 
 .button-container {
   z-index: 55;
-  position: fixed; 
+  position: fixed;
   left: 0;
   right: 0; /* 하단에 위치 */
   margin: 0 auto;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 
-  bottom:6rem;
+  bottom: 6rem;
   width: 50rem;
   height: 6.5rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
@@ -394,7 +399,7 @@ body {
   border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
   border-width: 2px;
-  color:white;
+  color: white;
   font-family: "GoogleSans-Bold";
   font-size: 30px;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
@@ -402,20 +407,19 @@ body {
   background-color: #0f1116;
   cursor: pointer;
   outline: none;
-  
 }
 
 .shadow {
   z-index: 50;
-  position: fixed; 
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0; /* 하단에 위치 */
   margin: 0 auto;
-  justify-content: center; 
+  justify-content: center;
   align-items: center;
   background-size: cover;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 
   width: 100%;
   bottom: 0; /* 페이지 하단에 고정 */
@@ -429,92 +433,176 @@ body {
   box-shadow: 0 0 25px 30px #0f1116, 0 0 60px 45px #0f1116;
 }
 
-
-.page3, .page4{
-  color:white;
-}
-.page4{
-  margin-bottom: 50%; /*가장 아래 높이 지정*/
+.page3 {
+  color: white;
+  margin-top: 16rem; /*합친후 조정 필요*/
 }
 
-.page3_title, .page4_title{
+.page3_title {
   text-align: left;
-  margin-left: 2rem;
+  margin-bottom: 4.25rem;
+  margin-left: 4rem;
   font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
-  font-size:26px;
-}
-
-.page3_title{
-  margin-top: 16rem; /*합친후 조정 필요*/
-  margin-bottom: 22rem;
-  text-align: left;
-}
-.page4_title{
-  margin-top: 29rem;
-  margin-bottom: 6rem;
+  font-size: 44px;
 }
 
 .page3_content {
-  color:#e4e8ebcc;
-  text-align: left;
-  margin-left: 2rem;
-  font-family: "OpenSans"; /*페이지3 내용 폰트*/
-  font-weight: 300;
-  font-size: 10px;
-  line-height: 2;
+  color: rgba(255, 255, 255, 0.9);
+  font-family: "GoogleSans"; /*페이지3 내용 폰트*/
+  font-weight: normal;
+  font-size: 1.7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.page4_content{
+
+.blue_rectangle {
+  margin-bottom: 1.7rem;
+  width: 50rem;
+  height: 5.5rem;
+  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+  justify-content: flex-start;
+  align-items: center; /* 세로 중앙 정렬 */
+
+  border-color: rgba(66, 133, 244, 1);
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+  padding: 13px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.green_rectangle {
+  margin-bottom: 1.7rem;
+  width: 50rem;
+  height: 5.5rem;
+  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+  justify-content: flex-start;
+  align-items: center; /* 세로 중앙 정렬 */
+
+  border-color: rgba(52, 168, 83, 1);
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+  padding: 13px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.yellow_rectangle {
+  margin-bottom: 1.7rem;
+  width: 50rem;
+  height: 5.5rem;
+  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+  justify-content: flex-start;
+  align-items: center; /* 세로 중앙 정렬 */
+
+  border-color: rgba(249, 171, 0, 1);
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+  padding: 13px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.red_rectangle {
+  margin-bottom: 1.7rem;
+  width: 50rem;
+  height: 5.5rem;
+  display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
+  justify-content: flex-start;
+  align-items: center; /* 세로 중앙 정렬 */
+
+  border-color: rgba(234, 67, 53, 1);
+  border-style: solid;
+  border-width: 3.5px;
+  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+  padding: 13px 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.image {
+  margin-left: 2rem;
+}
+
+.text {
+  width: 100%;
+  text-align: center; /* 텍스트 중앙 정렬 */
+}
+
+.page4 {
+  color: white;
+  margin-bottom: 50%; /*가장 아래 높이 지정*/
+}
+
+.page4_title {
+  text-align: left;
+  margin-top: 29rem;
+  margin-bottom: 6rem;
+  margin-left: 2rem;
+  font-family: "OpenSans"; /*타이틀 폰트*/
+  font-weight: 600;
+  font-size: 26px;
+}
+
+.page4_content {
   text-align: center;
 }
 
-.page4_con_title1, .page4_con_title2, .page4_con_title3{
+.page4_con_title1,
+.page4_con_title2,
+.page4_con_title3 {
   margin-top: 7%; /*세가지 요소 간의 간격*/
   font-family: "OpenSans"; /*페이지4 내용 제목 폰트*/
   font-weight: 600;
   font-size: 13.5px;
   line-height: 1.5;
 }
-.page4_con_text1, .page4_con_text2, .page4_con_text3{
+.page4_con_text1,
+.page4_con_text2,
+.page4_con_text3 {
   font-family: "OpenSans";
   font-weight: 300;
   margin-top: -20px; /*글자간격*/
   font-size: 12px;
-  color:#e4e8ebcc;
+  color: #e4e8ebcc;
 }
 
-.page4_con_title1, .page4_con_text1{
+.page4_con_title1,
+.page4_con_text1 {
   margin-left: -40%;
 }
-.page4_con_title2, .page4_con_text2{
+.page4_con_title2,
+.page4_con_text2 {
   text-align: center;
 }
-.page4_con_title3, .page4_con_text3{
+.page4_con_title3,
+.page4_con_text3 {
   margin-left: 50%;
 }
 
-.page4_plus{
+.page4_plus {
   text-align: center;
   margin-top: 8%;
   margin-bottom: 8%;
   font-size: 6rem;
   font-weight: lighter;
 }
-.page4_plus_content{
-  color:#e4e8ebcc;
-  margin:0 auto;
+.page4_plus_content {
+  color: #e4e8ebcc;
+  margin: 0 auto;
   text-align: center;
   font-family: "OpenSans";
   font-weight: 400;
   line-height: 3.5rem;
   font-size: 22px;
-  border-color:#e4e8ebcc;;
+  border-color: #e4e8ebcc;
   width: 33rem;
   border-style: solid;
   border-width: 0.5px;
   border-radius: 10px; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 20px;
-  background-color: rgba(17, 21, 27, 0.8); 
+  background-color: rgba(17, 21, 27, 0.8);
 }
 
 /*page3,4 end*/
