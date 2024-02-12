@@ -551,10 +551,9 @@ body {
   font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
   font-size: 52px;
-  margin-top: 29rem;
-  margin-bottom: 14px;
+  margin-top: 8rem;
+  margin-bottom: 1.4rem;
 }
-
 .page4_title_sub {
   text-align: left;
   margin-left: 2.6rem;
@@ -563,12 +562,35 @@ body {
   font-weight: 400;
   font-size: 20px;
 }
+
 .page4_content {
   text-align: center;
   margin-bottom: 9rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 9rem;
+}
+.page4_con_text1,
+.page4_con_text2,
+.page4_con_text3 {
+  font-family: "OpenSans";
+  font-weight: 300;
+  font-size: 20px;
+  color: #e4e8ebcc;
+  display: flex;
+  width: 25.5556vw;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.page4_con_text1 {
+  margin-left: 7.7778vw;
+  margin-right: 3.8889vw;
+}
+.page4_con_text3 {
+  margin-right: 7.7778rem;
+  margin-left: 3.8889vw;
 }
 .page4_con_title1,
 .page4_con_title2,
@@ -577,7 +599,6 @@ body {
   font-family: "OpenSans"; /*페이지4 내용 제목 폰트*/
   font-weight: 600;
   font-size: 27px;
-  line-height: 1.5;
   width: 25.5556vw;
   aspect-ratio: 1;
   text-align: center;
@@ -598,22 +619,11 @@ body {
   margin-right: 7.7778rem;
   margin-left: 3.8889vw;
 }
-.page4_con_text1,
-.page4_con_text2,
-.page4_con_text3 {
-  font-family: "OpenSans";
-  font-weight: 300;
-  margin-top: -20px; /*글자간격*/
-  font-size: 20px;
-  color: #e4e8ebcc;
-}
-
 .page4_plus_content {
-  padding-left: 20px;
-  margin-left: 3rem;
-  border-radius: 100px;
+  margin-left: 5rem;
+  padding-left: 2rem;
   border-left-color: #ffffff;
-  border-left-width: 0.3rem;
+  border-width: 0.3rem;
   border-left-style: solid;
   color: #e4e8ebcc;
   font-family: "OpenSans";
