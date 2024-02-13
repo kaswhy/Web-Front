@@ -408,6 +408,7 @@ body {
   border-width: 2px;
   color: white;
   font-family: "GoogleSans";
+  font-weight: bold;
   font-size: 30px;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 13px 20px;
