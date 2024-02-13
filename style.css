@@ -559,8 +559,8 @@ body {
   text-align: left;
   margin-left: 2.6rem;
   margin-bottom: 5.4rem;
-  font-family: "OpenSans"; /*타이틀 폰트*/
-  font-weight: 400;
+  font-family: "NotoSans"; /*타이틀 폰트*/
+  font-weight: 500;
   font-size: 20px;
 }
 
@@ -597,7 +597,7 @@ body {
 .page4_con_title2,
 .page4_con_title3 {
   display: flex;
-  font-family: "OpenSans"; /*페이지4 내용 제목 폰트*/
+  font-family: "NotoSans"; /*페이지4 내용 제목 폰트*/
   font-weight: 600;
   font-size: 27px;
   width: 25.5556vw;
@@ -623,12 +623,11 @@ body {
 .page4_plus_content {
   margin-left: 5rem;
   padding-left: 2rem;
-  border-left-color: #ffffff;
-  border-width: 0.3rem;
+  border-left-color: rgba(255, 255, 255, 0.4);
+  border-left-width: 0.3rem;
   border-left-style: solid;
-  color: #e4e8ebcc;
   font-family: "OpenSans";
-  font-weight: 400;
+  font-weight: 600;
   line-height: 3.5rem;
   font-size: 24px;
 }
