@@ -42,9 +42,9 @@
 }
 
 @font-face {
-  font-family: "GoogleSans-Bold";
+  font-family: "GoogleSans";
   src: url(landing_page/fonts/Google-Sans-Bold.woff) format("woff");
-  font-weight: normal;
+  font-weight: bold;
   font-style: normal;
 }
 
@@ -407,7 +407,7 @@ body {
   border-style: solid;
   border-width: 2px;
   color: white;
-  font-family: "GoogleSans-Bold";
+  font-family: "GoogleSans";
   font-size: 30px;
   border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   padding: 13px 20px;
