@@ -216,7 +216,7 @@ body {
   letter-spacing: -0.02em;
   text-align: left;
   opacity: 80%;
-  color: #e4e8ebcc;
+  color: #E4E8EB;
 }
 
 .swiper {
@@ -332,7 +332,7 @@ body {
   line-height: 1.055rem;
   letter-spacing: -0.02em;
   text-align: left;
-  color: #e4e8eb80;
+  color: rgba(228, 232, 235, 50);
   opacity: 50%;
 }
 /*page2 end*/
