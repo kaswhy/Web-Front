@@ -86,7 +86,6 @@
 
 /* 모바일 수평 스크롤 금지 */
 html, body {
-  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -99,11 +98,10 @@ body {
 .background {
   margin: 0;
   padding: 0;
-  overflow: auto; 
+  overflow-x: hidden; 
   background-attachment: scroll;
   background-color: #090a0d;
-  height: 100vh;
-  width: 100%;
+  max-width: fit-content;
   top: 0;
   left: 0;
   z-index: -1;
@@ -125,11 +123,11 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 0 17.5rem 0;
+  margin: 0 0 4.5rem 0;
 }
 
 .page1_header_logo {
-  margin: 2.2rem 0 0 2.5rem;
+  margin: 1.5rem 0 0 1.5rem;
   display: flex;
   align-items: center;
 }
@@ -141,9 +139,9 @@ body {
 .page1_header_logo_head {
   font-family: "GoogleSans";
   font-weight: 700;
-  font-size: 1.36rem;
-  width: 8.3vw;
-  height: 1.43vh;
+  font-size: 0.5rem;
+  width: 1.5rem;
+  height: 0.625rem;
   margin: 0 1rem 0 1rem;
 }
 
@@ -152,7 +150,7 @@ body {
   font-weight: 400;
   width: 9.4vw;
   height: 1.43vh;
-  font-size: 1.36rem;
+  font-size: 0.5rem;
 }
 
 .page1_header_join {
@@ -160,7 +158,7 @@ body {
   font-family: "OpenSans";
   font-weight: 700;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
-  font-size: 1.2rem;
+  font-size: 0.5rem;
   background-color: #4285f4;
   color: var(--text-color);
   border: none;
@@ -182,7 +180,7 @@ body {
 }
 
 .page1_section_logo {
-  margin: 0 0 1.75rem 0;
+  margin: 0 0 0.625rem 0;
   width: 18.49vw;
   height: 4.9vh;
 }
@@ -195,32 +193,32 @@ body {
   font-family: "OpenSans";
   font-weight: 550;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
-  font-size: 4.08rem;
+  font-size: 1.5rem;
   width: 81.39vw;
   height: 9.45vh;
-  margin: 0 0 2.21rem 0;
+  margin: 0 0 0.625rem 0;
 }
 
 #inha {
   font-family: "OpenSans";
   font-weight: 100;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
-  font-size:2.38rem ;
+  font-size: 0.875rem ;
   height: 2.05vh;
   margin: 0 0 0 0;
 }
 
 .page1_section_body {
   color: var(--body-text-color);
-  margin: 10rem 0 0 0;
+  margin: 5rem 0 0 0;
 }
 
 .page1_section_body > p {
   font-family: "OpenSans";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
-  font-size: 2.38rem;
-  margin: 0 0 1.9rem 0;
+  font-size: 0.875rem;
+  margin: 0.625rem 0 0 0;
   letter-spacing: -0.04375rem;
 }
 /*page1 end*/
@@ -232,26 +230,25 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100vh;
-
-  padding: 0 0 0 0;
 }
 
 .page2_title {
-  margin: 1.25rem 0 2.5rem 2.5rem;
+  padding-top: 4.875rem;
+  margin: 0 0 0 1.25rem;
   font-family: "OpenSans";
   font-weight: 600;
   font-size: 1.625rem;
-  line-height: 3.541rem;
+  line-height: 2.188rem;
   color: rgba(255, 255, 255, 1);
 }
 
 .page2_sub {
-  margin: 0 0 9.25rem 2.5rem;
+  margin: 1.25rem 0 4.625rem 1.25rem;
   font-family: "RotoMono";
-  font-size: 1.7rem;
+  font-size: 0.625rem;
   font-weight: 400;
-  line-height: 2.251rem;
-  letter-spacing: -0.02em;
+  line-height: 1rem;
+  letter-spacing: -0.02rem;
   text-align: left;
   opacity: 80%;
   color: #E4E8EB;
@@ -260,6 +257,7 @@ body {
 .swiper {
   margin: 0 0 1.65rem 2.5rem;
   width: 94.7vw;
+  height: 17.625rem;
   position: relative;
 }
 
@@ -273,9 +271,9 @@ body {
 
 .page2_swiper_image {
   position: relative;
-  margin: 0 0 20.63rem 0;
-  width: 77.729133vw;
-  height: 21.84365vh;
+  margin: 0 0 1.375rem 0;
+  width: 17.583rem;
+  height: 10.938rem;
   top: 0;
   left: 0;
 }
@@ -314,25 +312,22 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "OpenSans";
-  font-size: 4.08rem;
+  font-size: 1.5rem;
   font-weight: 700;
   line-height: 30.53px;
-  letter-spacing: 0em;
   color: rgba(255, 255, 255, 1);
   z-index: 3;
 }
 
 .page2_list {
   position: absolute;
-  margin: 0 0 0 0;
   top: 63.4%;
-  width: 92.639%;
-  height: 39.05%;
+  width: 16.188rem;
+  height: 5.313rem;
   font-family: "OpenSans";
-  font-size: 2.38rem;
-  line-height: 2.907rem;
+  font-size: 0.875rem;
+  line-height: 1.188rem;
   font-weight: 300;
-  letter-spacing: 0rem;
   text-align: left;
   padding-left: 2rem;
   opacity: 0;
@@ -346,10 +341,10 @@ body {
 }
 
 #team_study_head {
-  font-size: 2.38rem;
+  font-size: 0.875rem;
 }
 #team_study_tail {
-  font-size: 1.7rem;
+  font-size: 0.625rem;
 }
 
 .swiper-slide-active ul {
@@ -361,14 +356,13 @@ body {
 }
 
 .page2_caution {
+  margin: 0 0 0 2.25rem;
   list-style: none;
-  margin: 0 0 0 4.5rem;
-  padding-left: 0;
   font-family: "RotoMono";
-  font-size: 1.36rem;
+  font-size: 0.5rem;
   font-weight: 400;
-  line-height: 2.055rem;
-  letter-spacing: -0.02em;
+  line-height: 0.688rem;
+  letter-spacing: -0.02rem;
   text-align: left;
   color: rgba(228, 232, 235, 50);
   opacity: 50%;
@@ -400,7 +394,7 @@ body {
 .page1_arrow_container {
   z-index: 60;
   position: fixed;
-  bottom: 320px;
+  bottom: 13rem;
   left: 0;
   right: 0; /* 하단에 위치 */
   margin: 0 auto;
@@ -415,8 +409,8 @@ body {
 
 #arrow {
   z-index: 60;
-  width: 8rem;
-  height: 5rem;
+  width: 1.813rem;
+  height: 0.5rem;
   opacity: 0; /* 초기에 투명하게 설정 */
   animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
   transition: transform 0.5s ease, display 0.5s ease;
@@ -428,15 +422,15 @@ body {
   position: fixed;
   left: 0;
   right: 0; /* 하단에 위치 */
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  margin: 0 auto 2.5rem auto;
+  /* justify-content: center;
+  align-items: center; */
   background-size: cover;
   background-repeat: no-repeat;
 
-  bottom: 6rem;
-  width: 50rem;
-  height: 6.5rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
+  bottom: 0.6rem;
+  width: 20rem;
+  height: 3.313rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
@@ -447,9 +441,8 @@ body {
   color: white;
   font-family: "GoogleSans";
   font-weight: bold;
-  font-size: 30px;
-  border-radius: 4rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
-  padding: 13px 20px;
+  font-size: 0.75rem;
+  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   background-color: #090a0d;
   cursor: pointer;
   outline: none;
@@ -473,7 +466,7 @@ body {
   right: 0;
   margin: 0 auto; /* 수평 가운데 정렬 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
-  height: 17rem; /* 원하는 블러 처리된 요소의 높이 설정 */
+  height: 9.563rem; /* 원하는 블러 처리된 요소의 높이 설정 */
   background-color: #090a0d; /* 블러 처리된 배경 색상 설정 */
   backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
   box-shadow: 0 0 25px 30px #090a0d, 0 0 60px 45px #090a0d;
@@ -484,7 +477,6 @@ body {
   color: white;
   width: 100%;
   height: 100vh;
-  padding: 9.5rem 0 0 0;
   background-color: #090a0d;
   background-size: cover;
   background-repeat: no-repeat;
@@ -492,18 +484,17 @@ body {
 
 .page3_title {
   text-align: left;
-  margin-bottom: 4.25rem;
-  margin-left: 4rem;
+  margin: 4.5rem 0 2rem 2.125rem;
   font-family: "OpenSans"; /*타이틀 폰트*/
   font-weight: 600;
-  font-size: 3.5rem;
+  font-size: 1.375rem;
 }
 
 .page3_content {
   color: rgba(255, 255, 255, 0.9);
   font-family: "NotoSans"; /*페이지3 내용 폰트*/
   font-weight: normal;
-  font-size: 1.7rem;
+  font-size: 0.625rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -511,75 +502,74 @@ body {
 
 .blue_rectangle {
   margin-bottom: 1.7rem;
-  width: 50rem;
-  height: 5.5rem;
+  width: 19.125rem;
+  height: 3rem;
   display: flex;
-  justify-content: flex-start; /*왼쪽부터 배치 시작*/
+  justify-content: center; /*왼쪽부터 배치 시작*/
   align-items: center; /* 세로 중앙 정렬 */
+  text-align: center;
 
   border-color: rgba(66, 133, 244, 1);
   border-style: solid;
-  border-width: 3.5px;
+  border-width: 0.088rem;
   border-radius: 2rem;
-  padding: 13px 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .green_rectangle {
   margin-bottom: 1.7rem;
-  width: 50rem;
-  height: 5.5rem;
+  width: 19.125rem;
+  height: 3rem;
   display: flex;
   justify-content: flex-start; /*왼쪽부터 배치 시작*/
   align-items: center; /* 세로 중앙 정렬 */
 
   border-color: rgba(52, 168, 83, 1);
   border-style: solid;
-  border-width: 3.5px;
+  border-width: 0.088rem;
   border-radius: 2rem;
-  padding: 13px 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .yellow_rectangle {
   margin-bottom: 1.7rem;
-  width: 50rem;
-  height: 5.5rem;
+  width: 19.125rem;
+  height: 3rem;
   display: flex;
   justify-content: flex-start; /*왼쪽부터 배치 시작*/
   align-items: center; /* 세로 중앙 정렬 */
 
   border-color: rgba(249, 171, 0, 1);
   border-style: solid;
-  border-width: 3.5px;
+  border-width: 0.088rem;
   border-radius: 2rem;
-  padding: 13px 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .red_rectangle {
   margin-bottom: 1.7rem;
-  width: 50rem;
-  height: 5.5rem;
+  width: 19.125rem;
+  height: 3rem;
   display: flex;
   justify-content: flex-start; /*왼쪽부터 배치 시작*/
   align-items: center; /* 세로 중앙 정렬 */
 
   border-color: rgba(234, 67, 53, 1);
   border-style: solid;
-  border-width: 3.5px;
+  border-width: 0.088rem;
   border-radius: 2rem;
-  padding: 13px 20px;
   background-color: rgba(255, 255, 255, 0.1);
 }
 
 .image {
   margin-left: 2rem;
+  width:1.25rem;
+  height:1.25rem;
 }
 
 .text {
   width: 100%;
-  text-align: center; /* 텍스트 중앙 정렬 */
+  text-align: center;
 }
 
 /*page3 end*/
