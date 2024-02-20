@@ -430,19 +430,19 @@ body {
 
   bottom: 0.6rem;
   width: 20rem;
-  height: 3.313rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
+  height: 3.438rem; /* 버튼을 수직 가운데 정렬할 높이 설정 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
   justify-content: center; /* 가로 중앙 정렬 */
   align-items: center; /* 세로 중앙 정렬 */
 
   border-color: rgba(255, 255, 255, 0.7);
   border-style: solid;
-  border-width: 2px;
+  border-width: 0.063rem;
   color: white;
   font-family: "GoogleSans";
   font-weight: bold;
   font-size: 0.75rem;
-  border-radius: 2rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
+  border-radius: 1.656rem; /* 모서리 둥근 직사각형 버튼 모양 설정 */
   background-color: #090a0d;
   cursor: pointer;
   outline: none;
@@ -466,7 +466,7 @@ body {
   right: 0;
   margin: 0 auto; /* 수평 가운데 정렬 */
   display: flex; /* 내부 요소를 가로 정렬하기 위해 flex 사용 */
-  height: 9.563rem; /* 원하는 블러 처리된 요소의 높이 설정 */
+  height: 7.25rem; /* 원하는 블러 처리된 요소의 높이 설정 */
   background-color: #090a0d; /* 블러 처리된 배경 색상 설정 */
   backdrop-filter: blur(10px); /* 블러 처리 경계선 추가 */
   box-shadow: 0 0 25px 30px #090a0d, 0 0 60px 45px #090a0d;
@@ -586,6 +586,7 @@ body {
   width: 100%;
   height: 100vh;
   padding: 5rem 0 0 0;
+  margin-bottom: 7.25rem;
   background-image: url(img/page4_background.png);
   background-size: cover;
   background-repeat: no-repeat;
