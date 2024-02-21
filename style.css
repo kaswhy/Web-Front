@@ -264,7 +264,7 @@ body {
 
 .swiper {
   margin: 0 0 1.65rem 1.25rem;
-  width: 18.753rem;
+  width: 21.25rem;
   height: 17.625rem;
   position: relative;
 }
@@ -301,8 +301,8 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 77.729133vw;
-  height: 21.84365vh;
+  width: 17.583rem;
+  height: 10.938rem;
   top: 0;
   left: 0;
   z-index: 1;
