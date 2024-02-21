@@ -30,22 +30,27 @@ window.addEventListener("scroll", function () {
 });
 
 let idx = 0;
+let startY;
 let isScrolling = false;
 
 const select = document.querySelector(".background");
 const inner = select.querySelectorAll(".page1, .page2, .page3, .page4");
 
-$(window).on('wheel', function(e) {
+$(window).on('touchstart', function(e) {
+  startY = e.originalEvent.touches[0].clientY;
+});
+
+$(window).on('touchmove', function(e) {
   if (isScrolling) return; // 이미 스크롤 중이면 무시
   isScrolling = true;
-  
-  const deltaY = e.originalEvent.deltaY;
+
+  const deltaY = e.originalEvent.touches[0].clientY - startY;
   const scrollAmount = 100; // 스크롤 감도 조절
 
   if (deltaY > 0) {
-    idx = Math.min(idx + 1, inner.length - 1);
-  } else {
     idx = Math.max(idx - 1, 0);
+  } else {
+    idx = Math.min(idx + 1, inner.length - 1);
   }
 
   $('html,body').stop().animate({
