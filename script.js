@@ -32,7 +32,7 @@ window.addEventListener("scroll", function () {
 let idx = 0;
 let startY;
 let isScrolling = false;
-const minDeltaY = 50; // 최소 터치 이동 거리
+const minDeltaY = 30; // 최소 터치 이동 거리
 
 const select = document.querySelector(".background");
 const inner = select.querySelectorAll(".page1, .page2, .page3, .page4");
