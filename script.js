@@ -1,8 +1,8 @@
 const swiper = new Swiper(".swiper", {
   // centerSlide
-  slidesPerView: "1.1",
+  slidesPerView: "1",
   centeredSlides: false,
-  spaceBetween: 48,
+  spaceBetween: 30,
 
   //loop
   loop: false,
@@ -12,6 +12,7 @@ const swiper = new Swiper(".swiper", {
 
   //slideSpeed
   speed: 1500,
+
 });
 
 window.addEventListener("scroll", function () {

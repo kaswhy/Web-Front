@@ -241,7 +241,7 @@ body {
 }
 
 .page2_title {
-  padding-top: 4.875rem;
+  padding-top: 6rem;
   margin: 0 0 0 1.25rem;
   font-family: "OpenSans";
   font-weight: 600;
@@ -259,12 +259,12 @@ body {
   letter-spacing: -0.02rem;
   text-align: left;
   opacity: 80%;
-  color: #E4E8EB;
+  color: rgba(228, 232, 235, 1);
 }
 
 .swiper {
-  margin: 0 0 1.65rem 2.5rem;
-  width: 94.7vw;
+  margin: 0 0 1.65rem 1.25rem;
+  width: 18.753rem;
   height: 17.625rem;
   position: relative;
 }
@@ -279,7 +279,6 @@ body {
 
 .page2_swiper_image {
   position: relative;
-  margin: 0 0 1.375rem 0;
   width: 17.583rem;
   height: 10.938rem;
   top: 0;
@@ -290,8 +289,8 @@ body {
   position: absolute;
   object-fit: cover;
   border-radius: 10px;
-  width: 77.729133vw;
-  height: 21.84365vh;
+  width: 17.583rem;
+  height: 10.938rem;
   top: 0;
   left: 0;
   opacity: 0.5;
@@ -337,15 +336,28 @@ body {
   line-height: 1.188rem;
   font-weight: 300;
   text-align: left;
-  padding-left: 2rem;
+  padding-left: 0rem;
   opacity: 0;
   color: rgba(255, 255, 255, 1);
+  margin: 0 0 0 0;
+  list-style-type: none;
 }
 
-#figma_logo,
-#notion_logo,
+.page2_list li::before {
+  content: "•";
+  margin-right: 0.313rem;
+}
+
+#figma_logo{
+  margin-left: 0.75rem; 
+}
+
+#notion_logo{
+  margin-left: 0.563rem;
+}
+
 #github_logo {
-  margin-left: 1.7rem;
+ margin-left: 0.563rem;
 }
 
 #team_study_head {
@@ -360,7 +372,7 @@ body {
 }
 
 .page2_list li {
-  margin: 2.75rem 0 0 1rem;
+  margin: 0.875rem 0 0 0;
 }
 
 .page2_caution {
