@@ -123,11 +123,12 @@ body {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  margin: 0 0 4.5rem 0;
+  margin: 0 0 7rem 1.5rem;
 }
 
 .page1_header_logo {
-  margin: 1.5rem 0 0 1.5rem;
+  margin: 1.688rem 0 0 0;
+  height: 0.63rem;
   display: flex;
   align-items: center;
 }
@@ -142,7 +143,6 @@ body {
   font-size: 0.5rem;
   width: 1.5rem;
   height: 0.625rem;
-  margin: 0 1rem 0 1rem;
 }
 
 .page1_header_logo_tail {
@@ -151,24 +151,25 @@ body {
   width: 9.4vw;
   height: 1.43vh;
   font-size: 0.5rem;
+  margin: 0.563rem 0 0.625rem 0.313rem;
 }
 
 .page1_header_join {
-  margin: 2.2rem 2.6rem 0 0;
+  margin: 1.125rem 1.375rem 0 0;
   font-family: "OpenSans";
   font-weight: 700;
-  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 0.125rem 3.125rem rgba(0, 0, 0, 0.5);
   font-size: 0.5rem;
   background-color: #4285f4;
   color: var(--text-color);
   border: none;
   text-align: center;
-  border-radius: 2.65rem;
+  border-radius: 1.656rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20vw;
-  height: 4.154vh;
+  width: 4.5rem;
+  height: 1.813rem;
   white-space: nowrap;
 }
 
@@ -180,7 +181,7 @@ body {
 }
 
 .page1_section_logo {
-  margin: 0 0 0.625rem 0;
+  margin: 0 0 0.862rem 0;
   width: 18.49vw;
   height: 4.9vh;
 }
@@ -194,31 +195,38 @@ body {
   font-weight: 550;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 1.5rem;
-  width: 81.39vw;
-  height: 9.45vh;
-  margin: 0 0 0.625rem 0;
+  line-height: 2.063rem;
+  margin: 0 0 0 0;
 }
 
 #inha {
   font-family: "OpenSans";
   font-weight: 100;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
-  font-size: 0.875rem ;
-  height: 2.05vh;
-  margin: 0 0 0 0;
+  font-size: 0.875rem;
+  margin: 0.813rem 0 0 0;
 }
 
 .page1_section_body {
   color: var(--body-text-color);
-  margin: 5rem 0 0 0;
+  margin: 4.563rem 0 0 0;
 }
 
-.page1_section_body > p {
+.page1_section_first {
   font-family: "OpenSans";
   font-weight: 300;
   text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
   font-size: 0.875rem;
-  margin: 0.625rem 0 0 0;
+  margin: 0 0 0 0;
+  letter-spacing: -0.04375rem;
+}
+
+.page1_section_second {
+  font-family: "OpenSans";
+  font-weight: 300;
+  text-shadow: 0px 2px 50px rgba(0, 0, 0, 0.5);
+  font-size: 0.875rem;
+  margin: 1.188rem 0 0 0;
   letter-spacing: -0.04375rem;
 }
 /*page1 end*/
