@@ -32,6 +32,7 @@ window.addEventListener("scroll", function () {
 let idx = 0;
 let startY;
 let isScrolling = false;
+const minDeltaY = 50; // 최소 터치 이동 거리
 
 const select = document.querySelector(".background");
 const inner = select.querySelectorAll(".page1, .page2, .page3, .page4");
@@ -45,19 +46,20 @@ $(window).on('touchmove', function(e) {
   isScrolling = true;
 
   const deltaY = e.originalEvent.touches[0].clientY - startY;
-  const scrollAmount = 100; // 스크롤 감도 조절
 
-  if (deltaY > 0) {
-    idx = Math.max(idx - 1, 0);
-  } else {
-    idx = Math.min(idx + 1, inner.length - 1);
+  if (Math.abs(deltaY) >= minDeltaY) {
+    if (deltaY > 0) {
+      idx = Math.max(idx - 1, 0);
+    } else {
+      idx = Math.min(idx + 1, inner.length - 1);
+    }
+
+    $('html,body').stop().animate({
+      scrollTop: $(inner[idx]).offset().top // 다음 페이지의 시작 위치로 스크롤
+    }, 600, function() {
+      isScrolling = false;
+    });
   }
-
-  $('html,body').stop().animate({
-    scrollTop: $(inner[idx]).offset().top // 다음 페이지의 시작 위치로 스크롤
-  }, 600, function() {
-    isScrolling = false;
-  });
 
   // 스크롤 감쇠
   setTimeout(function() {
