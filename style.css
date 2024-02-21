@@ -409,6 +409,8 @@ body {
 
 #arrow {
   z-index: 60;
+  width: 1.938rem;
+  height: 0.563rem;
   opacity: 0; /* 초기에 투명하게 설정 */
   animation: fadeInOut 2s linear infinite; /* 나타나고 사라지는 애니메이션 설정 */
   transition: transform 0.5s ease, display 0.5s ease;
